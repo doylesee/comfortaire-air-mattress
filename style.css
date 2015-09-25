@@ -1,0 +1,460 @@
+/*
+Theme Name: The A Theme
+Version: 1.0
+Author: Doyle See
+Author URI: http://doylesee.com
+*/
+
+/* START Comfortaire Mattress styles */
+/* Comfortaire Mattress - Fonts */
+@font-face {
+    font-family: 'rapier_let_plain';
+    src: url('fonts/rapier-let-plain-webfont.eot');
+    src: url('fonts/rapier-let-plain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rapier-let-plain-webfont.woff2') format('woff2'),
+         url('fonts/rapier-let-plain-webfont.woff') format('woff'),
+         url('fonts/rapier-let-plain-webfont.ttf') format('truetype'),
+         url('fonts/rapier-let-plain-webfont.svg#rapier_let_plain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoblack';
+    src: url('fonts/lato-black-webfont.eot');
+    src: url('fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-black-webfont.woff2') format('woff2'),
+         url('fonts/lato-black-webfont.woff') format('woff'),
+         url('fonts/lato-black-webfont.ttf') format('truetype'),
+         url('fonts/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Comfortaire Mattress - General styles */
+body.comfortaire-mattress {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+	overflow-x: hidden;
+}
+body.comfortaire-mattress h1, h2 {
+	color: #454545;
+	font-weight: 700;
+}
+body.comfortaire-mattress p {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
+	margin: 0 0 20px 0;
+}
+body.comfortaire-mattress a {
+	color: #963e99;
+}
+body.comfortaire-mattress strong {
+	font-weight: 700;
+}
+body.comfortaire-mattress span {
+	color: #933b97;
+	font-family: 'rapier_let_plain';
+	font-weight: normal !important;
+}
+.comfortaire-mattress a.store-button,
+.comfortaire-mattress a.store-button:hover {
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center #9d32a4; /* Old browsers */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center -moz-linear-gradient(top,  #9d32a4 0%, #b838bc 100%); /* FF3.6+ */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9d32a4), color-stop(100%,#b838bc)); /* Chrome,Safari4+ */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center -webkit-linear-gradient(top,  #9d32a4 0%,#b838bc 100%); /* Chrome10+,Safari5.1+ */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center -o-linear-gradient(top,  #9d32a4 0%,#b838bc 100%); /* Opera 11.10+ */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center -ms-linear-gradient(top,  #9d32a4 0%,#b838bc 100%); /* IE10+ */
+	background: url('img/header__contact-btn-bg.png') no-repeat 16px center linear-gradient(to bottom,  #9d32a4 0%,#b838bc 100%); /* W3C */
+	
+	border: 1px solid #9f34a6;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'latoblack', sans-serif;
+	font-size: 14px;
+	line-height: 41px;
+	margin: 0 0 0 10px;
+	height: 41px;
+	padding: 0 16px 0 52px;
+	text-transform: uppercase;
+}
+.comfortaire-mattress .row {
+	max-width: 1140px;
+}
+/* Push */
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.slide-content {
+	visibility: hidden;
+}
+/* Slide left */
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+	visibility: visible !important;	
+}
+@keyframes slideLeft {
+	0% {
+		transform: translateX(150%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}		
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+/* Slide right */
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+	visibility: visible !important;	
+}
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}		
+	100% {
+		transform: translateX(0%);
+	}	
+}
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}		
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;						
+}
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}		
+	100% {
+		transform: translateY(0%);
+	}		
+}
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}		
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+/* Comfortaire Mattress - Header section */
+.header {
+	background: url('img/header-bg.jpg') no-repeat left bottom #eee;
+	color: #454545;
+	padding: 40px 0;
+}
+.header__logo {
+	text-align: center;
+}
+.header__contact p {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 31px;
+	margin: 0 0 8px 0;
+	text-align: center;
+}
+.header__contact span {
+	font-size: 31px;
+	line-height: 31px;
+}
+.header__contact strong {
+	color: #4f1886;
+	font-family: 'latoblack', sans-serif;
+	font-size: 24px;
+	line-height: 31px;
+}
+.header__contact button {
+	margin: 0 0 0 10px;
+}
+.header__introduction {
+	margin: 60px 0;
+}
+.header__introduction h1 {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 50px;
+	margin: 0;
+}
+.header__introduction h1 span {
+	color: #4f1886;
+	font-size: 50px;
+	line-height: 50px;
+}
+.header__introduction p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 15px;
+}
+.header__introduction p strong {
+	color: #4f1886;
+}
+.header__introduction a {
+	color: #460585;
+}
+.header__item  {
+	width: 100%;
+}
+.header__item h2 {
+	font-size: 17px;
+	line-height: 36px;
+	margin: 0 0 24px 0;
+	padding: 0 0 0 43px;
+	text-transform: uppercase;
+}
+.header__item--take-one-home h2 {
+	background: url('img/header__item--take-one-home-h2-bg.png') no-repeat left center;
+}
+.header__item--free-delivery h2 {
+	background: url('img/header__item--free-delivery-h2-bg.png') no-repeat left center;
+	line-height: 20px;
+}
+/* Comfortaire Mattress - Sections */
+.section__copy h2 {
+	color: #fff;
+	font-size: 17px;
+	line-height: 17px;
+	margin: 0 0 28px 0;
+	text-transform: uppercase;
+}
+/* Comfortaire Mattress - Section 1 */
+.section--1 {
+	background: url('img/section--1-bg.gif') repeat center center #0d172e;
+	color: #c1cce7;
+	min-height: 388px;
+	padding: 64px 0 0 0;
+	position: relative;
+}
+.section--1 .section__image {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	width: 50%;
+}
+.section--1 .section__copy {
+	padding-bottom: 64px;
+}
+.section--1 .section__copy p {
+	color: #c1cce7;
+}
+/* Comfortaire Mattress - Section 2 */
+.section--2 {
+	background: url('img/section--2-bg.gif') repeat center center #460585;
+	color: #ddbff9;
+	padding: 40px 0 0 0;
+}
+.section--2 .section__copy p {
+	color: #ddbff9;
+}
+.section--2 .section__copy ul {
+	margin: 0 0 21px 21px;
+}
+.section--2 .section__copy ul li {
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0 0 6px 0;
+	list-style-image: url('img/section--2-li-bg.png');
+}
+/* Comfortaire Mattress - Section 3 */
+.section--3 {
+	background: url('img/section--3-bg.gif') repeat center center #559fd3;
+	color: #fff;
+	padding: 20px 0 24px 0;
+}
+.section--3 .section__image {
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+.section--3 .section__copy p,
+.section--3 .section__copy p strong {
+	color: #fff;
+}
+/* Comfortaire Mattress - Footer section */
+.footer {
+	background: #ededea;
+	padding: 0 0 7px 0;
+}
+.footer__copy {
+	margin: 88px 0 80px 0;
+	text-align: center;
+}
+.footer__copy h2 {
+	font-size: 28px;
+	line-height: 40px;
+	margin: 0 0 25px 0;
+}
+.footer__copy h2 span {
+	color: #4f1886;
+	font-size: 40px;
+	line-height: 40px;
+}
+.footer__copy p {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0 0 21px 0;
+}
+.footer__copy strong {
+	font-family: 'latoblack', sans-serif;
+}
+.footer__copyright {
+	text-align: center;
+}
+body.comfortaire-mattress .footer__copyright p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 0 0 20px 0;
+}
+.footer__copyright p a {
+	text-decoration: underline;
+}
+@media only screen and (min-width : 480px) {
+	.section--1 .section__copy {
+		padding-bottom: 100px;
+	}
+}
+@media only screen and (min-width : 640px) {
+	.section--1 .section__copy {
+		padding-bottom: 150px;
+	}
+}
+@media only screen and (min-width : 768px) {
+	/* Vertical-align Foundation contents */
+	.valign-middle {
+		display: table;
+	}
+	.valign-middle .columns {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.valign-middle .columns,
+	.valign-middle [class*="column"] + [class*="column"]:last-child {
+		float: none;
+	}
+	
+	.header {
+		background-position: left bottom;
+	}
+	.header__logo {
+		text-align: left;
+	}
+	.header__contact p {
+		text-align: right;
+	}
+	.header__item  {
+		float: left;
+		margin: 0 6% 0 0;
+		width: 44%;
+	}
+	.section--1 .section__copy {
+		padding-bottom: 0;
+		padding-left: 64px;
+	}
+	.section--2 .section__copy ul {
+		display: block;
+		left: 50%;
+		margin: 0 0 21px 0;
+		position: relative;
+		transform: translateX(-50%);
+		width: 72%;
+	}
+	.section--2 .section__copy ul:before,
+	.section--2 .section__copy ul:after{
+		content:" ";
+		display:table
+	}
+	.section--2 .section__copy ul:after{
+		clear:both
+	}
+	.section--2 .section__copy ul li {
+		float: left;
+		width: 50%;
+	}
+	.section--3 .section__image {
+		margin: 0;
+	}
+}
+@media only screen and (min-width : 992px) {
+	.header__introduction h1 {
+		font-size: 38px;
+	}
+	.header__introduction p {
+		font-size: 15px;
+	}
+	.header__item  {
+		width: 27.5%;
+	}
+}
+@media only screen and (min-width : 1200px) {
+	.header {
+		background: url('img/header-bg.jpg') no-repeat left bottom #eee;
+	}
+}
+/* END Comfortaire Mattress styles */
